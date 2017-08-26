@@ -1,0 +1,76 @@
+html,body{
+    font-family: 'Lato', sans-serif;
+    height:101%;
+    
+}
+.header {
+    background-image: url('/images/graph_background_15_grey.png');
+    background-repeat: repeat, repeat;
+    background-size: 50%;
+    background-color: #E0DFD9;
+    border-bottom: 1px solid #333;
+}
+.header h1 {
+    color: #a22;
+    font-family: 'Cantata One', serif;
+}
+.header h2 {
+    color: #333;
+}
+.header h2 .initial {
+    color: #a22;
+}
+
+#menu {
+    background-color: #90C1D2;
+    border-right: 1px solid #333;
+}
+#menu .pure-menu-selected, #menu .pure-menu-heading {
+    background-color: #5E8FA0;
+}
+
+#menu a {
+    color:#333;
+}
+
+#menu .pure-menu li a:hover, #menu .pure-menu li a:focus {
+    background-color: #E0DFD9;
+}
+
+a.external {
+    color: #aa2222;
+    text-decoration: none;
+    /*padding-right: 15px;  
+    background: transparent url(/images/external-link.png) no-repeat top right;*/
+}
+
+a:link,a:visited,a:hover,a:active {
+    color: #aa2222;
+    text-decoration: none;
+}
+
+a[href^="mailto:"] {
+    color: #aa2222;
+    text-decoration: none;
+}
+
+.l-box {
+    margin: 1em;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #90C1D2;
+    height: 12em;
+}
+
+.l-box img {
+    padding-top:1em;
+}
+
+.box-title {
+    background-color: #90C1D2;
+    width:100%;
+    font-size: 1.1em;
+}
+
+
+

@@ -1,0 +1,10 @@
+<h2 class="content-subhead">GODOT-ID: {{godot_id}}</h2>
+<h3>Calendar Informations:</h3>
+<p><b>Calendar Type/Dating System</b>: {{calendarInfo.CalendarType}}</p>
+<div ng-repeat="(key, value) in calendarPartials">
+  <div><b>{{value.type}}</b>: {{value.value}}</div>
+</div>
+<h3>Attestations:</h3>
+<div ng-repeat="(key, value) in attestations">
+  <div> <a href="{{value.uri}}" target="_blank"> {{ value.title }}</a></div>
+</div>

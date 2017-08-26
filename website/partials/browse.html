@@ -1,0 +1,6 @@
+<h2 class="content-subhead">Bowse data</h2>
+<div ng-repeat="(key, value) in resultat">
+  <div class="result"><a href="{{value.godot_uri}}">{{value.godot_uri}}</a>:<br>{{value.CalendarType}}
+  <span ng-repeat="(k, v) in value.calendar_partials"> => {{v.type}}: {{v.value}} </span><br>&nbsp;
+  </div>
+</div>

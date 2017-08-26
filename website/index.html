@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GODOT - Graph of Dated Objects and Texts.">
+    <base href="/">
+    <title>GODOT - Graph of Dated Objects and Texts.</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+<!--<![endif]-->
+    <link rel="stylesheet" href="css/godot.css">
+    <link href='https://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="godotApp">
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="home">GODOT</a>
+                <ul class="pure-menu-list">
+                    <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Get GODOT-ID</a></li> -->
+                    <li class="pure-menu-item"><a href="browse" class="pure-menu-link">Browse data</a></li>
+                    <li class="pure-menu-item"><a href="about" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item"><a href="resources" class="pure-menu-link">Resources</a></li>                    
+                    <li class="pure-menu-item"><a href="contact" class="pure-menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="header">
+                <h1><a href="/home">GODOT</a></h1>
+                <h2><a href="/home" style="color:#333"><span class="initial">G</span>raph <span class="initial">o</span>f <span class="initial">D</span>ated <span class="initial">O</span>bjects and <span class="initial">T</span>exts</a></h2>
+            </div>
+
+            <div class="content">
+                <div ng-view></div>
+            </div>
+        </div> <!--  main -->
+
+    </div> <!--  layout -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-resource.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.11/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.11/angular-messages.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

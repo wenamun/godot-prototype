@@ -1,0 +1,27 @@
+<h2 class="content-subhead">About GODOT</h2> <p>The aim of this graph database system is to create and maintain a gazetteer of calendar dates in 
+different calendar systems used in the Greek and Roman antiquity all across the mediterranean sea. Like geographical gazetteers this authority list 
+can be used to provide stable, unique identifiers (URIs) for each date in any of the calendar systems that has been used to refer to an astronomical 
+day in any ancient source, be it papyri, ostraca or inscriptions. It will serve as a means to search and browse ancient texts by their precise 
+temporal footprint using these URIs in digital editions and database or TEI/EpiDoc XML driven projects. <br>Where a clear system of conversions 
+between different calendar systems has been established, dates will be converted algorithmically into (proleptic) Julian calendar and Julian Day 
+Numbers. As more and more dates from antiquity are linked to the GODOT infrastructure, a complex knowledge graph of ancient dated objects and texts 
+evolves.</p> <h3>GODOT data model</h3> <p>The GODOT data model is based on a graph data model: Owing to the multitude of very different calendar 
+systems from antiquity (solar, lunar, civil calendars, or calendars based on eras or eponymous officials) there is a need for a data model with 
+highest flexibility possible to store calendrical data.</p> <p align="center"><img src="images/GODOTConceptualModel.png" style="border:1px solid 
+#ccc; max-width:100%;height:auto"></p> <p>Example of modelling an ancient Roman date with consular year dating attested in a Latin Inscription text (<a class="external" 
+href="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD018571">HD018571</a>):</p> <p>… <i>Kal(endis) Novembri[bus] / Sabino II et Anu/lino 
+co(n)s(ulibus)</i><br>… first day of November during the consulate of Sabinus and Anulinus</p> <p align="center"><img src="images/consularDating.png" 
+style="border:1px solid #ccc; max-width:100%;height:auto"></p>
+
+<p>In a graph linking nodes which represent dates in different calendar systems can be done by inserting only one edge, so modeling an ancient double 
+date or coregency or any type of synchronism. These ancient synchronisms provide information about the relations between different ancient calendar 
+systems and are therefore a key feature in the GODOT gazetteer.</p>
+
+<p>Wherever feasible ancient dates will be converted algorithmically into the (proleptic) Julian calendar and the Julian Day Number (using existing 
+online date converters like <a href="http://dc.online-resourcen.de/rest_api">Date Converter for Ancient Egypt</a> or creating new ones) for simple 
+comparing ancient dates from different calendar systems and doing calendrical calculations.</p>
+
+<p>A public API will give third party projects access to the complete GODOT data for reuse.</p>
+
+<p>&nbsp;</p>
+
